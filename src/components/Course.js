@@ -7,14 +7,14 @@ function Course()
         <div class="container">
             <div class="section-header text-center">
                 <p>Available Courses</p>
-                <h2>Navodaya Coaching</h2>
+                <h2>Courses Catalogue</h2>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-4">
                 <div class = "about">
                     <div class="blog-item">
                         <div class="blog-img">
-                            <img src="img/blog-1.jpg" alt="Image"/>
+                            <img src="img/eight.jpg" alt="Image" width="200" height="230"/>
                             <div class="meta-date">
                                 <span>09</span>
                                 <strong>April</strong>
@@ -42,7 +42,7 @@ function Course()
                 <div class = "about">
                     <div class="blog-item">
                         <div class="blog-img">
-                            <img src="img/blog-2.jpg" alt="Image"/>
+                            <img src="img/fifth.webp" alt="Image" width="200" height="230"/>
                             <div class="meta-date">
                                 <span>30</span>
                                 <strong>April</strong>

@@ -6,6 +6,7 @@ import Course from './Course';
 import Banners from './Banners';
 import Services from './Services';
 import Formula from './Formula';
+import Demo from './Demo';
 function Home()
 {
     return (
@@ -14,9 +15,9 @@ function Home()
       <About />
       <Services/>
       <Formula />
-      <Grades />
+      <Demo />
+      {/* <Grades /> */}
       <Price />
-      {/* <Location /> */}
       <Faculty />
       <Course />
         </div>

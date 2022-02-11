@@ -13,6 +13,9 @@ import FacultyPage from './Pages/FacultyPage';
 import CoursePage from './Pages/CoursePage';
 import PricePage from './Pages/PricePage';
 import ContactPage from './Pages/ContactPage';
+import RegisterPage from './Pages/RegisterPage';
+import ScannerPage from './Pages/ScannerPage';
+import DemoPage from './Pages/DemoPage';
 function App() {
   return (
   <div>
@@ -25,6 +28,9 @@ function App() {
           <Route exact path='/course' element={< CoursePage />}></Route>
           <Route exact path='/faculty' element={< FacultyPage />}></Route>
           <Route exact path='/price' element={< PricePage />}></Route>
+          <Route exact path='/register' element={< RegisterPage />}></Route>
+          <Route exact path='/scanner' element={< ScannerPage />}></Route>
+          <Route exact path='/demo' element={< DemoPage />}></Route>
         </Routes>
         </Router>
       <Footer />

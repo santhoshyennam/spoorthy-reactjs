@@ -71,7 +71,8 @@ function Header()
                         <a href="/about" class="nav-item nav-link">About</a>
                         <a href="/course" class="nav-item nav-link">Courses</a>
                         <a href="/faculty" class="nav-item nav-link">Faculty</a>
-                        <a href="/price" class="nav-item nav-link">Price</a>
+                        <a href="/demo" class="nav-item nav-link">Demo</a>
+                        <a href="/price" class="nav-item nav-link">Payment</a>
                         {/* <Link to="/" class="nav-item nav-link">Home</Link>
                         <Link to="/about" class="nav-item nav-link">About</Link>
                         <Link to="/course" class="nav-item nav-link">Courses</Link>
@@ -89,7 +90,7 @@ function Header()
                         <a href="/contact" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="ml-auto">
-                        <a class="btn btn-custom" href="https://biturl.top/vY36vq">Register</a>
+                        <a class="btn btn-custom" href="/register">Register</a>
                     </div>
                 </div>
             </nav>

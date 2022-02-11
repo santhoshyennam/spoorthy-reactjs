@@ -38,7 +38,7 @@ function Grades()
                   <div class="facts-item">
                       <i class="fa fa-check"></i>
                       <div class="facts-text">
-                          <h3 data-toggle="counter-up">2000</h3>
+                          <h3 data-toggle="counter-up">600</h3>
                           <p>Successful Seats</p>
                       </div>
                   </div>

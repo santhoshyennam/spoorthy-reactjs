@@ -1,7 +1,36 @@
-
+import  axios  from "axios";
+import { useState } from "react";
 
 function Contact()
 {
+    const [name,setName] = useState("");
+    const [email,setEmail] = useState("");
+    const [subject,setSubject] = useState("");
+    const [message,setMessage] = useState("");
+
+    async function insertData()
+    {
+        if(name==="" || email ==="" || subject==="" || message ==="")
+        {
+            alert("please fill out all details..")
+            return
+        }
+            
+            const result = await axios.post("http://localhost:8000/contact",{
+                name: name,
+                email: email ,
+                subject: subject,
+                message: message
+              });
+
+            if (!result) {
+                alert("Server error. please contact us");
+                return;
+            }
+            alert("successful");
+        
+
+    }
     return(
         <div class="contact">
         <div class="container">
@@ -45,33 +74,30 @@ function Contact()
                 <div class="col-md-7">
                     <div class="contact-form">
                         <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
                             <div class="control-group">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" value={name} data-validation-required-message="Please enter your name" onChange={(e)=>{setName(e.target.value)}} />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                <input type="text" class="form-control" id="email" placeholder="Your Email" value={email} required="required" data-validation-required-message="Please enter your email" onChange={(e)=>{setEmail(e.target.value)}} />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                <input type="text" class="form-control" id="subject" placeholder="Mobile Number" value={subject} required="required" data-validation-required-message="Please enter a subject" onChange={(e)=>{setSubject(e.target.value)}}/>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                <textarea class="form-control" id="message" placeholder="Message" required="required" value={message} data-validation-required-message="Please enter your message" onChange={(e)=>{setMessage(e.target.value)}}></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
-                                <button class="btn btn-custom" type="submit" id="sendMessageButton">Send Message</button>
+                                <button class="btn btn-custom" type="submit" id="sendMessageButton" onClick={insertData}>Send Message</button>
                             </div>
-                        </form>
                     </div>
                 </div>
                 <div class="col-md-12">
-                    {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1600663868074!5m2!1sen!2sbd" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> */}
                     <iframe
-            src="https://maps.google.it/maps?q=bahadurguda+lbnagar+hyderabad+india&output=embed"    height="500" style={{border:0}}allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            src="https://maps.google.it/maps?q=lbnagar+gurramguda+teachers_colony+hyderabad+india&output=embed"    height="500" style={{border:0}}allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
        
                 </div>
             </div>

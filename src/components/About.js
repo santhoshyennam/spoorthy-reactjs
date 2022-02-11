@@ -19,7 +19,7 @@ function About()
                   </div>
                   <div class="about-content">
                       <p style={{justifyContent: "center" }}>
-                          Spoorthy Entrance Academy is a leading coaching institute for past 20-25 years providing Navodaya,Gurkul coaching
+                          Spoorthy Entrance Academy is a leading coaching institute for past 25-30 years providing Navodaya,Gurkul coaching
                           to students in offline mode.This time we are providing coaching in both online and offline mode.
                           The coaching at SPOORTHY ACADEMY is not just like normal classroom sessions.During the initial days of coaching itself, coachers will get the confidence that they can get through any difficult problems or any tough questions. All the concepts will be taught with realtime examples and in an easily understandable way.
 
