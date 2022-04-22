@@ -12,7 +12,6 @@ function Header()
                     <div class="logo">
                         <a href="/">
                             <h1>Spoorthy<span>Academy</span></h1>
-                            {/* <!-- <img src="img/logo.jpg" alt="Logo"> --> */}
                         </a>
                     </div>
                 </div>
@@ -36,7 +35,7 @@ function Header()
                                 </div>
                                 <div class="top-bar-text">
                                     <h3>Call Us</h3>
-                                    <p>+91 84659 35341</p>
+                                    <p>+91 84659 35341 </p>
                                 </div>
                             </div>
                         </div>
@@ -70,27 +69,12 @@ function Header()
                     <a href="/" class="nav-item nav-link">Home </a>
                         <a href="/about" class="nav-item nav-link">About</a>
                         <a href="/course" class="nav-item nav-link">Courses</a>
+                        <a href="/sixth" class="nav-item nav-link">Class-6</a>
+                        <a href="/ninth" class="nav-item nav-link">Class-9</a>
                         <a href="/faculty" class="nav-item nav-link">Faculty</a>
-                        <a href="/demo" class="nav-item nav-link">Demo</a>
-                        <a href="/price" class="nav-item nav-link">Payment</a>
-                        {/* <Link to="/" class="nav-item nav-link">Home</Link>
-                        <Link to="/about" class="nav-item nav-link">About</Link>
-                        <Link to="/course" class="nav-item nav-link">Courses</Link>
-                        <Link to="/faculty" class="nav-item nav-link">Faculty</Link>
-                        <Link to="/price" >Price</Link> */}
-                        {/* <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu">
-                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                                <a href="single.html" class="dropdown-item">Detail Page</a>
-                                <a href="team.html" class="dropdown-item">Team Member</a>
-                                <a href="booking.html" class="dropdown-item">Schedule Booking</a>
-                            </div>
-                        </div> */}
+                        <a href="/scanner" class="nav-item nav-link">Payment</a>
                         <a href="/contact" class="nav-item nav-link">Contact</a>
-                    </div>
-                    <div class="ml-auto">
-                        <a class="btn btn-custom" href="/register">Register</a>
+                        <a href="/register" class="nav-item nav-link">Register</a>
                     </div>
                 </div>
             </nav>

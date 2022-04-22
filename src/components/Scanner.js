@@ -6,21 +6,24 @@ function Scanner()
         <div class="contact">
         <div class="container">
             <div class="section-header text-center">
-                <p>Get In Touch</p>
+                <p>Please contact our team and pay</p>
                 <h2>Scan QR and fill the form</h2>
             </div>
             <div class="row">
             <div class="col-md-12 my-auto">
                 <center>
-            <div class="card card-block w-25">
+            <div class="card card-block w-50">
                 <img src="img/myUpi.jpeg" alt="no preview"></img>
+                <h4>Upi Details</h4>
+                <p>97143</p>
+                <p>9959035341</p>
                 </div><hr></hr>
                 <h3>You can also pay to below bank account</h3>
                 <p style={{fontSize:"25px"}}>
-                    Bank : SBI <br></br>
-                    Account Holder Name : nksn <br></br>
-                    Account Number : 12345<br></br>
-                    IFSC : 12345
+                    Bank : KARUR VYSYA BANK <br></br>
+                    Account Holder Name : Shiva <br></br>
+                    Account Number : 1445115000008168<br></br>
+                    IFSC : KVBL0001445
                 </p>
                 </center><hr></hr>
 

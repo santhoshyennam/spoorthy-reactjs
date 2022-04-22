@@ -1,5 +1,3 @@
-
-
 function Footer()
 {
     return (
@@ -10,15 +8,9 @@ function Footer()
                     <div class="footer-contact">
                         <h2>Get In Touch</h2>
                         <p><i class="fa fa-map-marker-alt"></i>Gurramguda, B.N Reddy, Hyd</p>
+                        <p><i class="fa fa-map-marker-alt"></i>Hastinapuram, Hyd</p>
                         <p><i class="fa fa-phone-alt"></i>+91 84659 35341</p>
                         <p><i class="fa fa-envelope"></i>spoorthynavodaya@gmail.com</p>
-                        <div class="footer-social">
-                            <a class="btn" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -41,21 +33,10 @@ function Footer()
                         <a href="/">FQAs</a>
                     </div>
                 </div>
-                    {/* <div class="col-lg-3 col-md-6">
-                        <div class="footer-newsletter">
-                            <h2>Newsletter</h2>
-                            <form>
-                                <input class="form-control" placeholder="Full Name"/>
-                                <input class="form-control" placeholder="Email"/>
-                                <button class="btn btn-custom">Submit</button>
-                            </form>
-                        </div>
-                    </div> */}
             </div>
         </div>
         <div class="container copyright">
             <p>&copy; <a href="#">Spoorthy Academy</a>
-            {/* , All Right Reserved. Designed By <a href="https://htmlcodex.com">HTML Codex</a> */}
             </p>
         </div>
     </div>

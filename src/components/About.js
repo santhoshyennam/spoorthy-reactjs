@@ -1,3 +1,4 @@
+import { navodya } from "../data/navodaya";
 import Hightlight from "./Highlight";
 
 
@@ -19,21 +20,15 @@ function About()
                   </div>
                   <div class="about-content">
                       <p style={{justifyContent: "center" }}>
-                          Spoorthy Entrance Academy is a leading coaching institute for past 25-30 years providing Navodaya,Gurkul coaching
-                          to students in offline mode.This time we are providing coaching in both online and offline mode.
-                          The coaching at SPOORTHY ACADEMY is not just like normal classroom sessions.During the initial days of coaching itself, coachers will get the confidence that they can get through any difficult problems or any tough questions. All the concepts will be taught with realtime examples and in an easily understandable way.
-
-
+                         {navodya.about}
                       </p>
                       <ul>
-                          <li><i class="far fa-check-circle"></i>Online Classes</li>
-                          <li><i class="far fa-check-circle"></i>Offline Classes</li>
-                          <li><i class="far fa-check-circle"></i>Highly Experienced Faculty</li>
-                          <li><i class="far fa-check-circle"></i>Weekly Tests</li>
-                          <li><i class="far fa-check-circle"></i>Study Materials</li>
-                          <li><i class="far fa-check-circle"></i>Special Classes for doubt section</li>
+                          {
+                              navodya.provides.map((single)=>{
+                                  return  <li><i class="far fa-check-circle"></i>{single}</li>
+                              })
+                          }
                       </ul>
-                      {/* <a class="btn btn-custom" href="">Learn More</a> */}
                   </div>
               </div>
           </div>

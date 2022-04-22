@@ -1,0 +1,33 @@
+ table {
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+  }
+
+  .sixth th,.sixth td {
+    padding: 5px;
+    text-align: left;
+  }
+
+  .ninth th,.ninth td {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: left;
+  }
+
+table td,table th {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+table tr {
+    border-bottom: 1px solid #000;
+}
+table td:first-child {
+    border-left: none;
+}
+
+table td:last-child {
+    border-right: none;
+}
+

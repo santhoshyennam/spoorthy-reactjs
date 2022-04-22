@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 function Course()
@@ -13,14 +14,17 @@ function Course()
                 <div class="col-lg-4">
                 <div class = "about">
                     <div class="blog-item">
+                    <Link  to="/ninth">
                         <div class="blog-img">
                             <img src="img/eight.jpg" alt="Image" width="200" height="230"/>
+                            click here know more..
                             <div class="meta-date">
                                 <span>09</span>
                                 <strong>April</strong>
                                 <span>2022</span>
                             </div>
                         </div>
+                        </Link>
                         <div class="blog-text">
                             <h3><a href="#">For 9th class Admission</a></h3>
                             <div class="about-content">
@@ -41,14 +45,17 @@ function Course()
                 <div class="col-lg-4">
                 <div class = "about">
                     <div class="blog-item">
+                    <Link  to="/sixth">
                         <div class="blog-img">
                             <img src="img/fifth.webp" alt="Image" width="200" height="230"/>
+                          click here know more..
                             <div class="meta-date">
                                 <span>30</span>
                                 <strong>April</strong>
                                 <span>2022</span>
                             </div>
                         </div>
+                        </Link>
                         <div class="blog-text">
                             <h3><a href="#">For 6th class Admission</a></h3>
                             <div class="about-content">

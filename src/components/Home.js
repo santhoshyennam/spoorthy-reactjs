@@ -1,25 +1,19 @@
 import About from './About';
-import Grades from './Grades';
-import Price from './Price';
 import Faculty from './Faculty';
 import Course from './Course';
-import Banners from './Banners';
 import Services from './Services';
 import Formula from './Formula';
-import Demo from './Demo';
+import Scanner from './Scanner';
 function Home()
 {
     return (
         <div>
-        <Banners />
       <About />
       <Services/>
       <Formula />
-      <Demo />
-      {/* <Grades /> */}
-      <Price />
       <Faculty />
       <Course />
+      <Scanner/>
         </div>
     )
 }

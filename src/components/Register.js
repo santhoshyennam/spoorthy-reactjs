@@ -18,6 +18,8 @@ function Register()
    
     function sendRequest()
     {
+        setError("")
+        setSuccess("")
         if(name==="" || fname==="" || city==="" || email === "" || number === "" || address==="" || gender==="")
         {
             alert("please fill out all details..")
@@ -27,7 +29,7 @@ function Register()
         
         axios({
             method: 'post',
-            url: "http://localhost:8000/register",
+            url: "https://spoorthyacademy.herokuapp.com/register",
             headers: {}, 
             data: {
                 fullName: name,
@@ -65,8 +67,6 @@ function Register()
 </div>
   <div class="container py-5 h-100">
     
-            <form>
-
               <div class="row">
                 <div class="col-md-6 mb-4">
 
@@ -149,13 +149,10 @@ function Register()
                   </div>
 
                 </div>
-                </div>
-              
-              
+                </div>    
               <div class="mt-4 pt-2">
                 <button class="btn btn-primary btn-lg" value="Submit" onClick={()=>{sendRequest()}} >Submit</button>
               </div>
-            </form>
           </div>
         </div>
       </div>

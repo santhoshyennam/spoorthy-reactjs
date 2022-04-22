@@ -16,7 +16,8 @@ function Hightlight(props)
                 </div>
             </div>
         </div>
-    </div>    )
+    </div>  
+      )
 }
 
 export default Hightlight

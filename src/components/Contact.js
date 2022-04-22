@@ -1,35 +1,42 @@
 import  axios  from "axios";
 import { useState } from "react";
-
 function Contact()
 {
     const [name,setName] = useState("");
     const [email,setEmail] = useState("");
     const [subject,setSubject] = useState("");
     const [message,setMessage] = useState("");
-
+    const [loading,setLoading] = useState(false);
+    const [success,setSuccess] = useState("");
+    const [error,setError] = useState("");
     async function insertData()
     {
+        setError("")
+        setSuccess("")
         if(name==="" || email ==="" || subject==="" || message ==="")
         {
             alert("please fill out all details..")
             return
         }
-            
-            const result = await axios.post("http://localhost:8000/contact",{
+        setLoading(true)   
+        const result = await axios.post("https://spoorthyacademy.herokuapp.com/contact",{
                 name: name,
                 email: email ,
                 subject: subject,
                 message: message
               });
 
-            if (!result) {
+        if (!result) {
+                setLoading(false)
+                setSuccess("form submitted successfully")
+                setError("")    
                 alert("Server error. please contact us");
                 return;
             }
-            alert("successful");
-        
-
+        setLoading(false)
+        setError("")
+        setSuccess("successful")
+        alert("successful");
     }
     return(
         <div class="contact">
@@ -37,6 +44,9 @@ function Contact()
             <div class="section-header text-center">
                 <p>Get In Touch</p>
                 <h2>Contact for any query</h2>
+                {loading && <h4>please wait..</h4>}
+                <h4 style={{color:"green"}}>{success}</h4>
+                <h4 style={{color:"red"}}>{error}</h4>
             </div>
             <div class="row">
                 <div class="col-md-4">
@@ -58,6 +68,7 @@ function Contact()
                             <div class="contact-info-text">
                                 <h3>Call Us</h3>
                                 <p>+91 84659 35341</p>
+                                <p>+91 91004 65146</p>
                             </div>
                         </div>
                         <div class="contact-info-item">
@@ -95,9 +106,17 @@ function Contact()
                             </div>
                     </div>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-6">
+                    <h5>Office Location</h5>
                     <iframe
             src="https://maps.google.it/maps?q=lbnagar+gurramguda+teachers_colony+hyderabad+india&output=embed"    height="500" style={{border:0}}allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+       
+                </div>
+
+                <div class="col-md-6">
+                    <h5>Hostel Location (For Boys &amp; Girls)</h5>
+                    <iframe
+            src="https://maps.google.it/maps?q=lbnagar+hastinapuram+ndr_deluxe_girls_hostel+hyderabad+india&output=embed"    height="500" style={{border:0}}allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
        
                 </div>
             </div>
